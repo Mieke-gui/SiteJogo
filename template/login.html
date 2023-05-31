@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu jogo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('send_file', path='style.css') }}">
+</head>
+<body>
+    <div id="game-container">
+        <iframe src="{{ url_for('send_file', path='index.html') }}" width="800" height="600"></iframe>
+    </div>
+    <script src="{{ url_for('send_file', path='sw.js') }}"></script>
+    <script src="{{ url_for('send_file', path='workermain.js') }}"></script>
+</body>
+</html>
